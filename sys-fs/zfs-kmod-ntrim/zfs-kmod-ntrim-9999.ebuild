@@ -26,6 +26,8 @@ DEPEND="
 
 RDEPEND="${DEPEND}
 	!sys-fs/zfs-fuse
+	!sys-fs/zfs
+	!sys-fs/zfs-kmod
 "
 
 AT_M4DIR="config"
