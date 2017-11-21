@@ -1,0 +1,14 @@
+diff --git a/terminatorlib/terminator.py b/terminatorlib/terminator.py
+index 1686006..960e53d 100755
+--- a/terminatorlib/terminator.py
++++ b/terminatorlib/terminator.py
+@@ -95,9 +95,7 @@ class Terminator(Borg):
+             self.doing_layout = False
+         if not self.pid_cwd:
+             self.pid_cwd = get_pid_cwd()
+-        if self.gnome_client is None:
+-            self.attempt_gnome_client()
+         self.connect_signals()
+ 
+     def connect_signals(self):
+        """Connect all the gtk signals"""
